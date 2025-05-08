@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="text-dark"><i class="fas fa-home icon"></i>FALE SOBRE VOCÊ</h1>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+        <section id="section1" class="mb-5">
+            <h2 class="text-dark"><i class="fas fa-lightbulb icon"></i>Selecione abaixo</h2>
+        </section>  
+        
+        <form
+            action="/cadastro"
+            method="POST" 
+            target="https://www.youtube.com/">
+
+
+        
+            
+            <div>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+            <option value="">Selecione...</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="ES">Espírito Santo</option>
+            </select>
+            </div>
+
+
+            
+            <label>Gênero:</label>
+            
+
+
+            <input type="radio" id="masculino" name="genero" value="M" checked>
+            <label class="form-check-label">Masculino</label>
+
+            <input type="radio" id="feminino" name="genero" value="F">
+            <label class="form-check-label">Feminino</label>
+
+            <input type="radio" id="n_binario" name="genero" value="NB">
+            <label class="form-check-label">Não Binário</label>
+
+            <input type="radio" id="n_inf" name="genero" value="NI">
+            <label class="form-check-label">Não Informado</label>
+
+            <input type="radio" id="outro" name="outro" value="O">
+            <label class="form-check-label">Outro</label>
+            </div>
+
+
+            <div>
+            <label>Interesses:</label>
+            <input type="checkbox" id="esportes" name="interesses[]" value="esportes">
+            <label for="esportes">Esportes</label>
+            
+            <input type="checkbox" id="musica" name="interesses[]" value="musica">
+            <label for="musica">Música</label>
+
+            <input type="checkbox" id="jogos" name="interesses[]" value="jogos">
+            <label for="jogos">Jogos</label>
+
+            <input type="checkbox" id="filmes" name="interesses[]" value="filmes">
+            <label for="filmes">Filmes</label>
+
+            <input type="checkbox" id="arte" name="interesses[]" value="arte">
+            <label for="arte">Arte</label>
+
+            <input type="checkbox" id="series" name="interesses[]" value="series">
+            <label for="series">Series</label>
+            </div>
+
+
+            <div>
+            <label for="cor-favorita">Cor favorita:</label>
+            <input type="color" id="cor-favorita" name="cor_favorita" value="#0000ff">
+
+            <label for="cor-favorita">Cor favorita:</label>
+            <input type="color" id="cor-favorita" name="cor_favorita" value="#black">
+            </div>
+
+
+            <div>
+            <label for="foto">coloque uma foto sua:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required>
+            </div>
+
+
+            <div>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" 
+            placeholder="Digite sua mensagem aqui..."></textarea>
+            </div>
+
+
+            <div>
+
+            </div>
+
+            <div>
+                <button type="submit"class="btn btn primary">Cadastrar</button>
+                <button type="reset" class="btn btn secondary">Limpar</button> 
+                </div>
+        </form>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer" class="container text-center">
+        <p class="text-muted pb-3">
+            <i class="far fa-copyright icon"></i> 
+            Só Julio
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
